@@ -2,11 +2,13 @@ import { useEffect, useMemo, useState, useCallback } from 'react';
 import { io } from 'socket.io-client';
 import ChatWindow from './components/ChatWindow.jsx';
 
-const socketUrl =
-  import.meta.env.VITE_SOCKET_URL ||
-  import.meta.env.VITE_API_URL ||
-  import.meta.env.VITE_APi_URL ||
-  (import.meta.env.DEV ? 'http://localhost:4000' : 'https://dev-buddy-1.onrender.com');
+// const socketUrl =
+//   import.meta.env.VITE_SOCKET_URL ||
+//   import.meta.env.VITE_API_URL ||
+//   import.meta.env.VITE_APi_URL ||
+//   (import.meta.env.DEV ? 'http://localhost:4000' : 'https://dev-buddy-1.onrender.com');
+const socketUrl= "https://dev-buddy-1-onrender.com";
+
 
 function App() {
   const [messages, setMessages] = useState([]);
